@@ -1,4 +1,4 @@
-phoenix:
+lmgtfy-slack:
   build: .
   command: ../phoenix-server.sh
   ports:
@@ -6,4 +6,4 @@ phoenix:
   volumes:
   - .:/phoenix
   hostname: phoenix
-  domainname: chrislaskey.com
+  domainname: yurifrl.com

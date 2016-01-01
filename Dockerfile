@@ -1,6 +1,6 @@
 FROM ubuntu:14.04
-MAINTAINER Chris Laskey <contact@chrislaskey.com>
-# Based on Dockerfile by Zohaib Rauf <zabirauf@gmail.com>
+MAINTAINER Yuri Freire <yurifrl@hotmail.com>
+# Based on Dockerfile by Chris Laskey <contact@chirslaskey.com>
 
 ENV PHOENIX_VERSION "0.14.0"
 
