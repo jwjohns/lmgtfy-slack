@@ -32,12 +32,12 @@ ENV PATH $PATH:/vendor/elixir/bin
 # NodeJS
 RUN apt-get install -y node npm
 
-# Phoenix
-RUN mkdir /phoenix
-WORKDIR /phoenix
-ADD ./phoenix-init.sh ./
-RUN ./phoenix-init.sh
+# App
+RUN mkdir /app
+WORKDIR /app
+# ADD ./init.sh ./
+# RUN ./init.sh
 
-WORKDIR /phoenix/app
+WORKDIR /app
 
-CMD ["../phoenix-server.sh"]
+# CMD ["../server.sh"]

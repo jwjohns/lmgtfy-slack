@@ -1,9 +1,9 @@
-lmgtfy-slack:
+app:
   build: .
-  command: ../phoenix-server.sh
+  # command: ../server.sh
   ports:
   - "4000:4000"
   volumes:
-  - .:/phoenix
-  hostname: phoenix
-  domainname: yurifrl.com
+  - .:/app
+  # hostname: phoenix
+  # domainname: yurifrl.com

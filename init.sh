@@ -4,7 +4,7 @@ if [ -z "$PHOENIX_VERSION" ]; then
   PHOENIX_VERSION="0.14.0"
 fi
 
-cd /phoenix
+cd /app
 
 if [ ! -d app ]; then
   yes | mix local.hex

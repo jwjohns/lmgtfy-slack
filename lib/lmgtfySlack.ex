@@ -1,0 +1,2 @@
+defmodule LmgtfySlack do
+end
