@@ -3,11 +3,11 @@ defmodule LmgtfySlack.Mixfile do
 
   def project do
     [app: :lmgtfySlack,
-     version: "0.0.1",
-     elixir: "~> 1.0",
-     build_embedded: Mix.env == :prod,
-     start_permanent: Mix.env == :prod,
-     deps: deps]
+      version: "0.0.1",
+      elixir: "~> 1.0",
+      build_embedded: Mix.env == :prod,
+      start_permanent: Mix.env == :prod,
+      deps: deps]
   end
 
   # Configuration for the OTP application
@@ -26,7 +26,12 @@ defmodule LmgtfySlack.Mixfile do
   #   {:mydep, git: "https://github.com/elixir-lang/mydep.git", tag: "0.1.0"}
   #
   # Type `mix help deps` for more examples and options
-  defp deps do
-    []
+  def deps do
+    [{:phoenix, "~> 0.16"},
+      {:phoenix_html, "~> 2.1"},
+      {:cowboy, "~> 1.0", only: [:dev, :test]},
+      {:slim_fast, ">= 0.6.0"}]
   end
+
+
 end
