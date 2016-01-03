@@ -27,11 +27,8 @@ defmodule LmgtfySlack.Mixfile do
   #
   # Type `mix help deps` for more examples and options
   def deps do
-    [{:phoenix, "~> 0.16"},
-      {:phoenix_html, "~> 2.1"},
-      {:cowboy, "~> 1.0", only: [:dev, :test]},
-      {:slim_fast, ">= 0.6.0"}]
+    [{:plug, "~> 1.0"},
+      {:cowboy, "~> 1.0"}]
   end
-
 
 end
